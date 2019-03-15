@@ -1,0 +1,13 @@
+
+F:\GitHub\myblog>python manage.py shell
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from blog.models import Article
+>>> Article.objects.all()
+<QuerySet [<Article: First Article！！>, <Article: Title>, <Article: TITLE>, <Article: 12313>, <Article: 456>, <Article: 45654>]>
+>>>Article.objects.all().values()
+<QuerySet [{'id': 1, 'title': 'First Article！！', 'content': 'Hello world !hello SQLite !'}, {'id': 2, 'title': 'Title', 'content': '
+hahahaha'}, {'id': 3, 'title': 'TITLE', 'content': 'CONTENT'}, {'id': 4, 'title': '12313', 'content': '1231212'}, {'id': 5, 'title': '
+456', 'content': '456456'}, {'id': 6, 'title': '45654', 'content': '45654'}]>
+
